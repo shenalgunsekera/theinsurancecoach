@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "PowerShell(Get-Item \"D:\\\\The Insurance Coach\\\\Video Object Remover-1778936415000.mp4\" | Select-Object Name, @{N='SizeMB';E={[math]::Round\\($_.Length/1MB,1\\)}})",
+      "PowerShell(ffmpeg -version 2>&1)",
+      "PowerShell(\\(Get-Item \"D:\\\\The Insurance Coach\\\\Video Object Remover-1778936415000.mp4\"\\).Length / 1MB)",
+      "PowerShell(New-Item -ItemType Directory -Path \"D:\\\\The Insurance Coach\\\\public\\\\video\" -Force)",
+      "PowerShell(Copy-Item \"D:\\\\The Insurance Coach\\\\Video Object Remover-1778936415000.mp4\" \"D:\\\\The Insurance Coach\\\\public\\\\video\\\\hero.mp4\" -Force)",
+      "PowerShell(Test-Path \"D:\\\\The Insurance Coach\\\\node_modules\\\\next\" | Write-Host; \\(Get-ChildItem \"D:\\\\The Insurance Coach\\\\node_modules\" -Directory | Measure-Object\\).Count)",
+      "PowerShell(Set-Location \"D:\\\\The Insurance Coach\"; $env:PATH = $env:PATH + \";D:\\\\The Insurance Coach\\\\node_modules\\\\.bin\"; node node_modules\\\\next\\\\dist\\\\bin\\\\next dev --port 3000 2>&1)"
+    ]
+  }
+}
