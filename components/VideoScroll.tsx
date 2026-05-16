@@ -14,8 +14,6 @@ export default function VideoScroll() {
     const container = containerRef.current;
     if (!video || !container) return;
 
-    let animFrame: number;
-
     const handleScroll = () => {
       const rect = container.getBoundingClientRect();
       const scrolled = -rect.top;
@@ -41,7 +39,6 @@ export default function VideoScroll() {
     }
 
     return () => {
-      cancelAnimationFrame(animFrame);
       window.removeEventListener('scroll', handleScroll);
       video.removeEventListener('loadedmetadata', onReady);
     };
