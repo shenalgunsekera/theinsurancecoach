@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 export default function VideoScroll() {
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [videoReady, setVideoReady] = useState(false);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -14,24 +13,32 @@ export default function VideoScroll() {
     const container = containerRef.current;
     if (!video || !container) return;
 
+    const seek = (time: number) => {
+      // Only seek if the time is within a buffered/seekable range
+      if (!video.seekable.length) return;
+      const end = video.seekable.end(video.seekable.length - 1);
+      video.currentTime = Math.min(time, end);
+    };
+
     const handleScroll = () => {
       const rect = container.getBoundingClientRect();
       const scrolled = -rect.top;
       const total = rect.height - window.innerHeight;
       const p = Math.max(0, Math.min(1, scrolled / total));
       setProgress(p);
-      if (video.duration > 0) {
-        video.currentTime = p * video.duration;
-      }
+      if (video.duration > 0) seek(p * video.duration);
     };
 
     const onReady = () => {
-      setVideoReady(true);
+      // Play then immediately pause — forces browser to buffer the whole file
+      video.play().then(() => {
+        video.pause();
+        video.currentTime = 0;
+      }).catch(() => {});
       window.addEventListener('scroll', handleScroll, { passive: true });
       handleScroll();
     };
 
-    // loadedmetadata fires once duration is known
     if (video.readyState >= 1) {
       onReady();
     } else {
@@ -70,8 +77,7 @@ export default function VideoScroll() {
           muted
           playsInline
           style={{
-            opacity: videoReady ? 1 : 0,
-            transition: 'opacity 0.5s ease',
+            opacity: 1,
             transform: 'scale(1.06)',
             transformOrigin: 'center center',
           }}
