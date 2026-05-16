@@ -114,7 +114,7 @@ export default function LearnInsurance() {
           className="mt-16 pt-16 border-t border-gray-800 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between"
         >
           <p className="font-heading italic text-gray-400 text-lg">
-            "The best time to understand your insurance is before you need it."
+            &ldquo;The best time to understand your insurance is before you need it.&rdquo;
           </p>
           <button className="flex items-center gap-3 font-body text-xs tracking-widest uppercase text-chalk border border-gray-700 px-6 py-3 hover:bg-chalk hover:text-ink transition-all duration-300">
             Start Learning

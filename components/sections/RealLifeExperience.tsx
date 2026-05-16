@@ -124,7 +124,7 @@ export default function RealLifeExperience() {
               </p>
 
               <div className="p-6 bg-gray-900 border-l-2 border-chalk">
-                <p className="font-body text-xs tracking-widest uppercase text-gray-500 mb-2">Coach's Lesson</p>
+                <p className="font-body text-xs tracking-widest uppercase text-gray-500 mb-2">Coach&apos;s Lesson</p>
                 <p className="font-body text-sm text-gray-300 leading-relaxed">{story.lesson}</p>
               </div>
             </motion.div>

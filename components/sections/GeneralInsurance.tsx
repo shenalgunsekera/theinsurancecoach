@@ -84,7 +84,7 @@ export default function GeneralInsurance() {
           <div className="flex-1 p-8 bg-ink text-chalk">
             <p className="font-body text-xs tracking-widest uppercase text-gray-500 mb-4">Business Risk Assessment</p>
             <p className="font-heading italic text-xl md:text-2xl text-chalk leading-relaxed">
-              No two businesses face the same risks. A proper insurance review identifies exactly what you're exposed to — and what you need covered.
+              No two businesses face the same risks. A proper insurance review identifies exactly what you&apos;re exposed to — and what you need covered.
             </p>
           </div>
           <div className="md:w-64 p-8 border border-gray-300">

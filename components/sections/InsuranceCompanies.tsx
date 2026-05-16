@@ -88,7 +88,7 @@ export default function InsuranceCompanies() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-16 p-8 bg-ink text-chalk"
         >
-          <p className="font-body text-xs tracking-widest uppercase text-gray-400 mb-3">Coach's Note</p>
+          <p className="font-body text-xs tracking-widest uppercase text-gray-400 mb-3">Coach&apos;s Note</p>
           <p className="font-heading italic text-lg md:text-xl leading-relaxed">
             Each insurer has different strengths. The right company depends on your specific needs —
             not the biggest brand, but the best fit for your risk profile.

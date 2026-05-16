@@ -82,7 +82,7 @@ export default function LifeInsurance() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="max-w-sm font-body text-gray-400 text-sm leading-relaxed md:pb-4"
           >
-            Life insurance isn't just about death — it's about protecting the life you've built and the people who depend on you.
+            Life insurance isn&apos;t just about death — it&apos;s about protecting the life you&apos;ve built and the people who depend on you.
           </motion.p>
         </div>
 

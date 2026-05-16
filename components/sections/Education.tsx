@@ -44,7 +44,7 @@ export default function Education() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="lg:max-w-xs font-body text-gray-500 text-sm leading-relaxed lg:pb-4"
           >
-            The right qualification opens the right doors. Here's a clear map of the credentials that matter in the insurance industry.
+            The right qualification opens the right doors. Here&apos;s a clear map of the credentials that matter in the insurance industry.
           </motion.p>
         </div>
 

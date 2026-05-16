@@ -51,7 +51,7 @@ export default function Navigation() {
             <img
               src="/logo.svg"
               alt="The Insurance Coach"
-              className="h-9 w-auto"
+              className="h-6 w-auto"
               style={{ display: 'block' }}
             />
           </Link>

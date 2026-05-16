@@ -46,7 +46,7 @@ export default function QuickQuotes() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="mt-6 font-body text-gray-400 text-sm max-w-md mx-auto"
           >
-            Tell us what you need. We'll connect you with qualified brokers who can find the best cover at the best price.
+            Tell us what you need. We&apos;ll connect you with qualified brokers who can find the best cover at the best price.
           </motion.p>
         </div>
 
