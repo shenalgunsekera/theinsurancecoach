@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   description:
     'Understand insurance products, companies, brokers, regulations and more. The Insurance Coach is your trusted guide to navigating the world of insurance.',
   keywords: 'insurance coach, learn insurance, insurance products, life insurance, general insurance, insurance careers',
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+  },
 };
 
 import Navigation from '@/components/Navigation';

@@ -47,13 +47,13 @@ export default function Navigation() {
         }`}
       >
         <div className="max-w-[1600px] mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-8 h-8 bg-chalk flex items-center justify-center">
-              <span className="font-display text-ink text-sm leading-none">TIC</span>
-            </div>
-            <span className="font-display text-chalk text-lg tracking-wider hidden sm:block">
-              THE INSURANCE COACH
-            </span>
+          <Link href="/" className="flex items-center group">
+            <img
+              src="/logo.svg"
+              alt="The Insurance Coach"
+              className="h-9 w-auto"
+              style={{ display: 'block' }}
+            />
           </Link>
 
           <div className="flex items-center gap-6">

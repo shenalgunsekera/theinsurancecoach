@@ -22,6 +22,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# original source video (large, not needed in repo)
+*.mp4
+
+# Claude Code local config
+.claude/
+
 # OS
 .DS_Store
 Thumbs.db
